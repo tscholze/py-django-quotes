@@ -1,3 +1,9 @@
+# No migration files
+quotes/migrations/
+
+# Swap files
+*.swp
+
 # Sqllite
 db.sqlite3
 
