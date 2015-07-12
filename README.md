@@ -1,6 +1,6 @@
 <div style="text-align:center">
-	<a href="https://github.com/tscholze/py-django-quotes/raw/master/mysite/docs/quotes-site.png">
-		<img src="https://github.com/tscholze/py-django-quotes/raw/master/mysite/docs/quotes-site.png" height="300px" />
+	<a href="https://github.com/tscholze/py-django-quotes/blob/master/docs/quotes-site.png">
+		<img src="https://github.com/tscholze/py-django-quotes/blob/master/docs/quotes-site.png" height="300px" />
 	</a>
 </div>
 
