@@ -10,8 +10,8 @@ Quotes is my very first Django project. It is a simple quote storage. Quotes hel
 ## How to install
 1. Check if Django 1.8 is already installed
 1. Clone this repository
-1. Create database migration script with python manage.py makemigrations
-1. Perform database migration with python manage.py migrate
+1. Create database migration script with `python manage.py makemigrations`
+1. Perform database migration with `python manage.py migrate`
 1. Go to [http://localhost:8000/quotes](http://localhost:8000/quotes/) -> An empty site shows up
 1. Go to [http://localhost:8000/admin](http://localhost:8000/admin) to create new entries
 1. Go back to the Quotes app and hit refresh -> The latest ten quotes show up
