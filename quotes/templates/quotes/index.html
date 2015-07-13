@@ -1,38 +1,24 @@
-{% load staticfiles %}
+{% extends "quotes/base.html" %}
 
-<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
-<link rel="stylesheet" type="text/css" href="{% static 'quotes/style.css' %}" />
-
-<div class="card">
-   		<header>
-			<img src="{% static "quotes/images/elephant.png" %}" title="Turtle (c) Lemming" alt="Quote / Turtle Logo"/>
-	   		<h1>Quotes</h1>
-			<p class="quote">The perfect place to persist unique sentences of your life.</p>
-		</header>
-
-		<content>
-			<ul>
-				<li><a href="https://github.com/tscholze" title="Fork Quotes" alt="Fork Quotes"><i class="fa fa-github-alt fa-2x"></i></a></li>
-				<li><a href="https://twitter.com/tobonaut" title="Follow the developer" alt="Follow the developer"><i class="fa fa-twitter fa-2x"></i></a></li>
-			</ul>
-		</content>
-	</div>
+{% block content %}
 
 {% if latest_quote_list %}
 	{% for quote in latest_quote_list %}
 			<div class="card">
 			<content>
-				<p class="quote">{{ quote }}</p>
+				<p class="card-details">
+					<span style="float: left;"><a href="{% url 'quotes:detail' quote.id %}">#{{ quote.id }}</a></span>
+					<span style="float: right;">Upvotes: {{ quote.votes }}</span>
+					<div style="clean:both;">&nbsp;</div>
+				</p>
+				<p class="quote">{{ quote.quote_text }}</p>
 				<p class="author">{{ quote.author_name }}</p>
 			</content>
 		</div>
 	{% endfor %} 
 {% else %}
 
-No quotes are available.
+	<p>No quotes are available.</p>
 
 {% endif %}
-
-<footer>
-	<p>Avatar: <a href="http://openclipart.org">openclipart.org</a></p>
-</footer>
+{% endblock %}

@@ -16,5 +16,14 @@ Quotes is my very first Django project. It is a simple quote storage. Quotes hel
 1. Go to [http://localhost:8000/admin](http://localhost:8000/admin) to create new entries
 1. Go back to the Quotes app and hit refresh -> The latest ten quotes show up
 
+## Links
+In case you use the default settings of `runserver`:
+
+1. Start page: `/quotes`
+1. Detail page: `/quotes/1`
+1. Latest 10 quotes as json: `/quotes/api/all`
+1. Latest 10 quotes as rss feed: `/quotes/feed/all`
+
+
 ## License 
 Quotes is licensed under [MIT](https://en.wikipedia.org/wiki/MIT_License) License. 

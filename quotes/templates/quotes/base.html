@@ -1,0 +1,35 @@
+{% load staticfiles %}
+
+<meta charset="UTF-8">
+
+<title>{% block title %}Quotes - by tscholze{% endblock %}</title>
+
+<link rel="shortcut icon" href="{% static 'quotes/images/favicon.png' %}">
+<link rel="stylesheet" type="text/css" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+<link rel="stylesheet" type="text/css" href="{% static 'quotes/style.css' %}" />
+
+<body>
+	<div class="card">
+   		<header>
+			<img src="{% static "quotes/images/elephant.png" %}" title="Turtle (c) Lemming" alt="Quote / Turtle Logo"/>
+	   		<h1>Quotes</h1>
+			<p class="quote">The perfect place to persist unique sentences of your life.</p>
+		</header>
+
+		<content>
+			<ul>
+				<li><a href="{% url 'quotes:all_feed' %}" title="RSS (Atom) Feed" alt="RSS (Atom) Feed"><i class="fa fa-rss fa-2x"></i></a></li>
+				<li><a href="https://github.com/tscholze" title="Fork Quotes" alt="Fork Quotes"><i class="fa fa-github-alt fa-2x"></i></a></li>
+				<li><a href="https://twitter.com/tobonaut" title="Follow the developer" alt="Follow the developer"><i class="fa fa-twitter fa-2x"></i></a></li>
+			</ul>
+		</content>
+	</div>
+	
+	{% block content %}
+		replace me!
+	{% endblock %}
+	
+	<footer>
+		<p>Avatar: <a href="http://openclipart.org">openclipart.org</a></p>
+	</footer>
+</body>

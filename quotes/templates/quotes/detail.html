@@ -1,1 +1,19 @@
-<h1>{{ quote.quote_text }}</h1>
+{% extends "quotes/base.html" %}
+
+{% block title %}Quote # {{ quote.id }}{% endblock %}
+
+{% block content %}
+
+<div class="card">
+	<content>
+		<p class="card-details">
+			<span style="float: left;">#{{ quote.id }}</span>
+			<span style="float: right;">Upvotes: {{ quote.votes }}</span>
+			<div style="clean:both;">&nbsp;</div>
+		</p>
+		<p class="quote">{{ quote.quote_text }}</p>
+		<p class="author">{{ quote.author_name }}</p>
+	</content>
+</div>
+
+{% endblock %}

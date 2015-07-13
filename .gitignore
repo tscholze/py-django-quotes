@@ -1,3 +1,6 @@
+# Hidden OS X files
+.DS_Store
+
 # No migration files
 quotes/migrations/
 

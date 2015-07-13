@@ -54,15 +54,19 @@ content
 	font-size: 0.75rem;
 }
 
+footer, .card-details
+{
+	font-size: 0.75em;
+}
+
 footer
 {
 	height: 50px;
 	margin-top: 15px;
-	font-size: 0.75em;
 	color: #dadada;
 }
 
-footer a
+a
 {
 	color: inherit;
 }
@@ -108,6 +112,18 @@ content .author:before
 	margin-top: 25px;
 	box-shadow: 10px 10px 5px #aaa;
 	border: #aaa 1px solid;
+}
+
+.card-details
+{
+	color: #888888;
+	text-align: left;
+	font-size: 0.5rem;	
+}
+
+.card-details a
+{
+	text-decoration: none;	
 }
 
 /* Overriding font-awesome styles */
